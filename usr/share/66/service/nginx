@@ -1,0 +1,9 @@
+[main]
+@type = longrun
+@version = @VERSION@
+@description = "nginx http daemon"
+@user = ( root )
+@options = ( log )
+
+[start]
+@execute = ( nginx -g "daemon off;" )
